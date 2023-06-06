@@ -1,0 +1,39 @@
+main()
+{
+int opt,n;
+	while(1)
+	{
+		printf("Stack operations:\n");
+		printf("\n1.PUSH");
+		printf("\n2.POP");
+		printf("\n3.PEEK");
+		printf("\n4.TRAVERSE");
+		printf("\n5.EXIT\n");
+		printf("\nEnter your option: ");
+		scanf("%d",&opt);
+		if(opt==1)
+		{
+			printf("\n Enter Element: ");
+			scanf("%d",&n);
+			push(n);
+		}
+		if(opt==2)
+		{
+			pop();
+		}
+		if(opt==3)
+		{
+			peek();
+		}
+		if(opt==4)
+		{
+			traverse();
+		}
+		if(opt==5)
+		{
+			printf("\nTHANK YOU");
+			break;
+		}
+		printf("\n\n");
+	}
+}
